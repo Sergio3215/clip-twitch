@@ -15,13 +15,13 @@ export default function ClipViewer() {
     return (
         <div className="flex h-screen w-full items-center justify-center bg-black">
             <iframe
-                src={`https://clips.twitch.tv/embed?clip=${id}&autoplay=true&sandbox="allow-all-origin allow-scripts allow-same-origin"&parent=${hostname}&parent=streamelements.com`}
+                src={`https://clips.twitch.tv/embed?clip=${id}&autoplay=true&parent=${hostname}&parent=streamelements.com`}
                 height="360"
                 width="640"
                 allowFullScreen
                 className="w-full h-full"
                 referrerPolicy="no-referrer-when-downgrade"
-                sandbox="allow-all-origin allow-scripts allow-same-origin"
+                sandbox="allow-scripts allow-same-origin"
             >
             </iframe>
         </div>
