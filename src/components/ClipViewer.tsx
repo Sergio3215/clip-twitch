@@ -20,6 +20,8 @@ export default function ClipViewer() {
                 width="640"
                 allowFullScreen
                 className="w-full h-full"
+                referrerPolicy="no-referrer-when-downgrade"
+                sandbox="allow-all-origin allow-scripts allow-same-origin"
             >
             </iframe>
         </div>
