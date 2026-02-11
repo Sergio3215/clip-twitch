@@ -15,7 +15,7 @@ export default function ClipViewer() {
     return (
         <div className="flex h-screen w-full items-center justify-center bg-black">
             <iframe
-                src={`https://clips.twitch.tv/embed?clip=${id}&parent=${hostname}&autoplay=true`}
+                src={`https://clips.twitch.tv/embed?clip=${id}&parent=${hostname}&parent=streamelements.com&autoplay=true`}
                 height="360"
                 width="640"
                 allowFullScreen
