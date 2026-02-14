@@ -47,7 +47,7 @@ export default function ClipViewer() {
     }
 
     return (
-        <div className="flex h-screen w-full items-center justify-center bg-transparent text-black dark:bg-black dark:text-white font-semibold font-[Arial] uppercase text-shadow-black">
+        <div className="flex h-screen w-full items-center justify-center bg-transparent text-black dark:text-white font-semibold font-[Arial] uppercase text-shadow-black">
             {
                 clip && (
                     <div className='flex flex-col items-center justify-center h-screen w-screen p-12'>
