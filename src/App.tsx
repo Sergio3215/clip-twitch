@@ -6,9 +6,9 @@ function App() {
     return (
         <Router>
             <Routes>
-                <Route path="/clips/:id" element={<ClipViewer />} />
+                <Route path="/clips/:channel" element={<ClipViewer />} />
                 <Route path="/" element={<div className="text-white bg-black h-screen flex items-center justify-center font-bold text-4xl">¡Bienvenido Twitch Clips donde podes obtener el embed de twitch! <br />
-                    Use /clips/:id to view a clip.</div>} />
+                    Use /clips/:channel to view a clip.</div>} />
             </Routes>
         </Router>
     );
