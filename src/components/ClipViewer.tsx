@@ -62,7 +62,7 @@ export default function ClipViewer() {
                             sandbox="allow-scripts allow-same-origin"
                         >
                         </iframe>
-                        <h2 className="text-6xl font-bold bg-linear-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent">Clip de {clip.raider}</h2>
+                        <h2 className="text-6xl font-bold pt-10 bg-linear-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent">Clip de {clip.raider}</h2>
                     </div>
                 )
             }
