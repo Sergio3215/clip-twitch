@@ -7,6 +7,7 @@ type Clip = {
     clipId: string;
     raider: string;
     clipTitle: string;
+    bgColor: string;
 }
 
 export default function ClipViewer() {
@@ -50,7 +51,7 @@ export default function ClipViewer() {
         <div className="flex h-screen w-full items-center justify-center bg-transparent text-black dark:text-white font-semibold font-[Arial] uppercase text-shadow-black">
             {
                 clip && (
-                    <div className='flex flex-col items-center justify-center h-screen w-screen p-12 border-2 border-slate-950 rounded-lg bg-slate-950'>
+                    <div className={`flex flex-col items-center justify-center h-screen w-screen p-12 border-2 border-${clip.bgColor}-950 rounded-lg bg-${clip.bgColor}-950`}>
                         <h1 className="text-6xl font-bold pb-10 bg-linear-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent">{clip.clipTitle}</h1>
                         <iframe
                             src={`https://clips.twitch.tv/embed?clip=${clip.clipId}&autoplay=true&parent=${hostname}&parent=streamelements.com&parent=localhost`}
