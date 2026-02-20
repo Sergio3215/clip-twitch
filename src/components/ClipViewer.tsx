@@ -24,9 +24,9 @@ export default function ClipViewer() {
                 if (channel === data.channel) {
                     setClip(data);
 
-                    setTimeout(() => {
-                        setClip(null);
-                    }, 20000);
+                    // setTimeout(() => {
+                    //     setClip(null);
+                    // }, 20000);
                 }
                 else {
                     setClip(null);
@@ -38,6 +38,11 @@ export default function ClipViewer() {
             socket.disconnect();
         };
     }, [])
+
+    useEffect(() => {
+        // console.log(clip);
+
+    }, [clip])
 
     if (!channel) {
         return (
