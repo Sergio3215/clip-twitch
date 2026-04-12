@@ -24,9 +24,9 @@ export default function ClipViewer() {
                 if (channel === data.channel) {
                     setClip(data);
 
-                    setTimeout(() => {
-                        setClip(null);
-                    }, 20000);
+                    // setTimeout(() => {
+                    //     setClip(null);
+                    // }, 20000);
                 }
                 else {
                     setClip(null);
@@ -55,7 +55,7 @@ export default function ClipViewer() {
                         backgroundColor: clip.bgColor,
                         borderColor: clip.bgColor
                     }}>
-                        <h1 className="text-6xl font-bold pb-10 bg-linear-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent">{clip.clipTitle}</h1>
+                        <h1 className="text-6xl font-bold pb-10 bg-linear-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent">{clip.clipTitle.length > 40 ? clip.clipTitle.substring(0, 40) + "..." : clip.clipTitle}</h1>
                         <iframe
                             src={`https://clips.twitch.tv/embed?clip=${clip.clipId}&autoplay=true&parent=${hostname}&parent=streamelements.com&parent=localhost`}
                             height="360"
