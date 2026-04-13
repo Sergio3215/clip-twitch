@@ -24,9 +24,9 @@ export default function ClipViewer() {
                 if (channel === data.channel) {
                     setClip(data);
 
-                    // setTimeout(() => {
-                    //     setClip(null);
-                    // }, 20000);
+                    setTimeout(() => {
+                        setClip(null);
+                    }, 20000);
                 }
                 else {
                     setClip(null);
